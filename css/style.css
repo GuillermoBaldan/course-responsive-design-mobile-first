@@ -94,7 +94,7 @@ header img {
   color: var(--black);
 }
 
-.header--button-span {
+.header--title-container .header--button-span {
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -151,4 +151,67 @@ main {
   font-weight: 500;
   line-height: 1.6rem;
   color: #757575;
+}
+
+.main-currency-table {
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.main-currency-table .currency-table--title {
+  display: flex; /*Lo añadí yo*/
+  flex-direction: column; /*Lo añadí yo*/
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+}
+
+.currency-table--container {
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.currency-table--container table {
+  width: 100%;
+  height: 100%;
+}
+
+.currency-table--container td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  background-color: var(--just-white);
+}
+
+.currency-table--title {
+  align-self: center;
+  text-align: center;
+}
+
+.currency-table--date {
+  align-self: center;
+  text-align: center;
+}
+
+.currency-table--date p {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.45em;
+}
+
+.currency-table--date b {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.45em;
 }
