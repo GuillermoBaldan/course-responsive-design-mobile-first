@@ -53,7 +53,7 @@ header img {
   min-width: 288px;
   max-width: 900px;
   height: 218px;
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center;
   align-self: center;
 }
@@ -87,14 +87,14 @@ header img {
   /*Sombra*/
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border: none; /*Ponemos esta línea primero para quitar cualquier borde definido previamente*/
-  border-radius: 5px;
+  border-radius: 4px;
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
   color: var(--black);
 }
 
-.header--title-container .header--button-span {
+.header--title-container .header--button span {
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -163,8 +163,6 @@ main {
 }
 
 .main-currency-table .currency-table--title {
-  display: flex; /*Lo añadí yo*/
-  flex-direction: column; /*Lo añadí yo*/
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -178,6 +176,7 @@ main {
   max-width: 300px;
   height: 250px;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 .currency-table td {
@@ -204,20 +203,19 @@ main {
 }
 
 .currency-table--date {
-  align-self: center;
-  text-align: center;
+  width: 190px;
+  height: 31px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
 }
 
 .currency-table--date p {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.45em;
-}
-
-.currency-table--date b {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.45em;
+  margin: 7px;
+  font-size: 1.2rem;
+  line-height: 1.5px;
 }
 
 /* Redondeando los bordes de la tablar */
@@ -267,19 +265,19 @@ main {
 }
 
 .currency-table--date {
-  width: max-content;
-  height: 30px;
-  margin: 15px auto 0;
+  width: 190px;
+  height: 31px;
+  margin: 0 auto;
+  margin-top: 15px;
   padding: 8px;
   background-color: var(--soft-orange);
   border-radius: 8px;
 }
 
 .currency-table--date p {
+  margin: 7px;
   font-size: 1.2rem;
-  line-height: 1.5rem;
-  font-weight: 300;
-  color: var(--warm-black);
+  line-height: 1.5px;
 }
 
 .main-product-detail {
@@ -293,8 +291,8 @@ main {
 
 .product-detail--batata-logo {
   position: absolute;
-  width: 40px;
-  height: 25px;
+  width: 40.57px;
+  height: 24.01px;
   top: -10px;
   left: calc(50% - 20px);
   background-image: url("./../assets/icons/batata.svg");
@@ -319,6 +317,45 @@ main {
 
 .product-detail--title p {
   margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product-detail--card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .clock {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-image: url("./../assets/icons/clock.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card-body {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
