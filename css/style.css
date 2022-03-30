@@ -414,11 +414,13 @@ main {
 
 .plans-container--card {
   position: relative; /* para generar un efecto flotante en nuestra etiqueta de párrafo */
+  scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+
+  margin: 50px 20px 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -429,7 +431,7 @@ main {
   position: absolute;
   width: 120px;
   height: 31px;
-  paddding: 6px;
+  padding: 6px;
   left: calc(50% - 60px);
   background-color: var(--bitcoin-orange);
   border-radius: 8px;
@@ -484,4 +486,13 @@ main {
   height: 20px;
   background-image: url("../assets/icons/orange-right-arrow.svg");
   vertical-align: text-bottom;
+}
+
+.plans-container--slider {
+  display: flex;
+  gap: 50px;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
